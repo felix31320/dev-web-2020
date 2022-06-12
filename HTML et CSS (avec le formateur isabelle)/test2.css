@@ -1,0 +1,186 @@
+body{
+	font-family: "allah";
+}
+@font-face {
+	font-family: "allah";
+	src: url(allah.ttf);
+}
+#ecran-purple{
+	background-color: #C5D1ED;
+	border: solid yellow 5px;
+
+}
+
+h1, h2{ /* "..,.." ca veut dire ET*/
+	background-color: yellow;
+	border:solid green;
+	margin: 50px;
+	
+}
+
+#p1{
+	background-color: green;
+	border: solid green;
+	font-family: arial;
+}
+#p2{
+	background-color: brown;
+	border:solid green;
+	text-align: center;
+	padding:50px;
+}
+
+p em { /* ".. .." ca veut dire que la condition comme la probabilite*/
+	background-color: green;
+}
+
+.grey{
+	background-color: grey;
+	border:grey;
+}
+
+#p3{
+	color: yellow;
+	font-weight: bold !important;
+	font-size: 25px;
+}
+#p4{
+	text-decoration: underline; /*souligne*/
+	font-style:italic;
+}
+#p5{
+	text-decoration:line-through; /*barrer*/
+	font-variant: small-caps;
+}
+#p6{
+	text-align: right;
+	font-weight: bold;
+}
+#p7{
+	text-indent: 900px;
+
+}
+#p8{
+	letter-spacing: 10px;
+}
+#p9{
+	font-family:helvetica;
+}
+#p10{
+	color:white;
+	background-color: black;
+	width: 100px;
+	margin-left: 250px; /*margin est la place de l'exterieur, padding est la place de l'interieur*/
+}
+#p11{
+	border:solid white 5px; /*border y a plusieur valuer : form,color,size*/
+	border-bottom-style: dotted; 
+	padding: 10px;
+	padding-left: 250px;	
+}
+#p12{
+	color: yellow;
+	font-size: 40px;
+	position:relative; /*absolute est l'exterieur, relatic est l'interieur */
+
+}
+#p13{
+	position: relative;
+	top: 1px;
+	opacity: 0.1;
+}
+
+#p14
+{
+	visibility: visible;
+}
+
+#p15
+{
+	display: inline;
+}
+
+#p16
+{
+	z-index: 10px; /* z-index est comme priorite d'afficher*/
+}
+
+#p17
+{
+	float: left;
+}
+
+#p18
+{
+	float: right;
+	margin-right: 900px;
+}
+
+#p19
+{
+	background-image: linear-gradient(to right,blue, white, red);
+	padding: 50px;
+	color: white;
+	text-shadow: 4px 1px 7px rgba(0,0,0,0.79); /* derriere du texte */
+	box-shadow: 26px 25px 12px 13px rgba(0,0,0,0.91);
+}
+
+ul  
+{
+	list-style: none;
+}
+
+ul li 
+{
+	background-image: url(https://previews.123rf.com/images/artsonik/artsonik1603/artsonik160300123/52901259-vector-illustration-d-une-bataille-des-armes-%C3%A0-feu-flat-ic%C3%B4ne-arme-%C3%A0-feu-noir-comme-un-pistolet-.jpg);	
+	background-size: 20px;
+	background-repeat: no-repeat;
+	padding-left:25px;
+}
+
+.animation{
+  -webkit-animation-name: zoomIn; /* copier dans le site animation css generator*/
+  animation-name: zoomIn;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+
+#attendre{
+  	cursor: wait;
+}
+
+#interdire{
+  	cursor: url("html5.png"), auto;
+}
+
+#box-sizing{
+	box-sizing: border-box; /* content-box ou border-box*/
+	width: 50%;
+	margin-left: 25%;
+	border: ridge #5B6DCD 10px;
+	padding: 10px;
+	text-align: center;
+}
+

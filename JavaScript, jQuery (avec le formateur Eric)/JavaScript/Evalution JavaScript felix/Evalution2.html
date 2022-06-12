@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Evalution Tableau</title>
+		<style>
+			table,td{
+				border-collapse: collapse;
+				padding:10px 40px;
+				text-align: center;
+			}
+			.border{
+				border:solid black 1px;
+			}
+		</style>
+		<script>
+			function calcule() {
+				// Produits 1
+				var x = document.formulaire.champ1.value;
+				var y = document.formulaire.champ2.value;
+				var z = x*y ;
+				var w = z*0.2;
+				var u = z + w;
+
+				document.getElementById('champ3').innerHTML = z;
+				document.getElementById('champ4').innerHTML = w;
+				document.getElementById('champ5').innerHTML = u;
+
+				// Produits 2
+
+				var a = document.formulaire.champ6.value;
+				var b = document.formulaire.champ7.value;
+				var c = a*b;
+				var d = c*0.2;
+				var e = c + d;
+
+				document.getElementById('champ8').innerHTML = c;
+				document.getElementById('champ9').innerHTML= d;
+				document.getElementById('champ10').innerHTML = e;
+
+				document.getElementById('total').innerHTML = u + e;
+
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<form name="formulaire">
+				<tr style="font-weight: bold;">
+					<td class="border">Descriptif</td>
+					<td class="border">Prix unitaire HT</td>
+					<td class="border">Quantité</td>
+					<td class="border">HT</td>
+					<td class="border">TVA 20%</td>
+					<td class="border">Prix TTC</td>
+				</tr>
+				<tr>
+					<td class="border">Produits 1</td>
+					<td class="border"><input style="text-align: center;" type="text" name="champ1"></td>
+					<td class="border"><input style="text-align: center;" type="text" name="champ2"></td>
+					<td class="border" id="champ3"></td>
+					<td class="border" id="champ4"></td>
+					<td class="border" id="champ5"></td>
+				</tr>
+				<tr>
+					<td class="border">Produits 2</td>
+					<td class="border"><input style="text-align: center;" type="text" name="champ6"></td>
+					<td class="border"><input style="text-align: center;" type="text" name="champ7"></td>
+					<td class="border" id="champ8"></td>
+					<td class="border" id="champ9"></td>
+					<td class="border" id="champ10"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="border" style="font-weight: bold;">Total</td>
+					<td class="border" id="total" style="font-weight: bold;"></td>
+				</tr>
+			</form>
+		</table>
+		<br><br>
+		<input type="button" value="Calculer" onclick="calcule()">
+	</body>
+</html>

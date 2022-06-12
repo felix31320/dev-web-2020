@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		table{
+			border-collapse: collapse;
+		}
+		td{
+			border:1px solid black;
+			text-align: center;
+			width: 20px;
+		}
+	</style>
+	</head>
+	<body>
+		<table>
+			<script>
+				for(x=-1;x<=10;x+=1){
+					document.write('<tr>');
+					document.write('<td style="background-color: #ccf8ff">' + (x==-1? '':x) + '</td>');
+
+					for(y=0;y<=10;y+=1){
+						var strstyle = (x==-1? 'style="background-color: #ccf8ff"':'');
+						document.write('<td ' + strstyle + '>' + Math.abs(y*x) + '</td>');
+					}
+					
+					document.write('</tr>');
+				}
+			</script>
+
+		</table>
+	</body>
+</html>

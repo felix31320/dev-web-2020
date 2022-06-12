@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<style>
+  #bloc{
+    width: 250px;
+    height: 50px;
+    background-color: #c9f7ff;
+  }
+</style>
+<body>
+<script>
+  var intNombre= 1;
+  function AddNumberBloc() {
+    intNombre +=1 ;
+    document.getElementById('bloc').innerHTML = intNombre;
+  }
+</script>
+<div id="bloc">1</div>
+<input type="button" value="cliquer" onclick="AddNumberBloc()">
+</body>
+</html>

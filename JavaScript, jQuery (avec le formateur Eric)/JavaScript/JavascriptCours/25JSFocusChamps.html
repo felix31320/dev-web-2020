@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function msgAlert() {
+				if (document.formulaire.place1.value == '') {
+					alert('ce champ est vide');
+					document.formulaire.place1.focus();
+				}
+				if (document.formulaire.place1.value != '') {
+					document.formulaire.place2.focus();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Modifier la valeur du champ</h1>
+		<form name="formulaire">
+			<input type="text" name="place1" size="40px"><br>
+			<input type="button" value="cliquer" onclick="msgAlert()"><br>
+			<input type="text" name="place2" size="40px">
+		</form>
+	</body>
+</html>

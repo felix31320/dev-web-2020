@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barre de progression en correction</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content{
+            display: flex;
+            width: 100%;
+        }
+
+        .clsBtn{
+            width: 10%;
+            height: 80px;
+            background-color: #cacaca;
+            border-left: 10px solid #a6a6a6;
+            border-top: 10px solid #a6a6a6;
+            border-bottom: 10px solid #580011;
+            border-right: 10px solid #580001;
+            font-size: 24px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .Contentbar{
+            height: 80px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pourcentage{
+            height: 60px;
+            background-color: white;
+            font-size: 26px;
+            width: 100%;
+            position: relative;
+        }
+
+        .pourcentage p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        #idbar {
+            background-color: blue;
+            height: 20px;
+            width: 0%;
+        }
+       
+    </style>
+    <script>
+        var a = 0;
+        function prgbar(x) {
+            a = a + x;
+            if (a>100){
+                a = 100;
+            }
+            if (a<0){
+                a = 0;
+            };
+           
+            document.getElementById('idtext').innerHTML = a + ' %';
+            document.getElementById('idbar').style.width = a + '%';
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="clsBtn" onclick="prgbar(-5)">&#9668</div>
+        <div class="Contentbar">
+            <div class="pourcentage" >
+                <p id="idtext">0%</p>
+            </div>
+            <div id="idbar"></div>    
+        </div>
+        <div class="clsBtn" onclick="prgbar(5)">&#9658</div>
+    </div>
+    
+</body>
+</html>

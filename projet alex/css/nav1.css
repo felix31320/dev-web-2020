@@ -1,0 +1,261 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    z-index: 100px;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #343A40;
+}
+
+.imgnav {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.Buttonimg64 {
+    margin-top: 5px;
+    width: 66px;
+    height: 66px;
+    background-position: center;
+    background-size: 64px;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: #6E7074;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.img100 {
+    width: 170px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.top {
+    color: white;
+    margin-top: 3px;
+    font-size: 25px;
+}
+
+.dropbtn {
+    background-color: #6E7074;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dropdown {
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+.none {
+    text-decoration: none;
+    color: white;
+}
+
+.floatright {
+    float: right;
+}
+
+.div1 {
+    margin-top: px;
+    width: 230px;
+    height: 120px;
+}
+
+.div2{
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 1100px){
+    .div2{
+        display: none;
+    }
+}
+
+.underline{
+    color: white;
+    text-decoration: none;
+    
+    font-size: 25px;
+}
+
+.deconnecter {
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 80px;
+    width: 200px;
+    font-size: 25px;
+    background-color: #6E7074;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.deconnecter:hover {
+    background-color: #3e8e41;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.button20 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.button20:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn,
+.signupbtn {
+    text-align: center;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 255px;
+    top: 70px;
+    width: 70%;
+    height: 80%;
+    overflow: auto;
+    background: rgba(255, 127, 0, 0.7);
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% 0px 3% 0px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+}
+
+.hr20 {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.changerprofile{
+    background: white;
+    width:80%;
+    padding-top:30px;
+    padding-bottom:330px;
+    border-radius: 10px;
+}
+
+.x256 {
+    float: left;
+    width: 45%;
+    height: 400px;
+    position: relative;
+}
+
+.img256 {
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    bottom: 0px;
+}
+
+.photo159 {
+    font-size: 30px;
+    float: right;
+    margin-top: 50px;
+}
+
+.upload {
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+    width: 80%;
+    height: 80px;
+    font-size: 40px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function calculDouble() {
+      var x = document.formulaire.champ.value;
+      document.formulaire.champ.value = x*2;
+    }
+  </script>
+</head>
+<body>
+<h1>Calcul double champ</h1>
+<form name="formulaire">
+  <input type="text" name="champ" size="40px">
+  <input type="button" value="Cliquer" onclick="calculDouble()">
+</form>
+
+</body>
+</html>

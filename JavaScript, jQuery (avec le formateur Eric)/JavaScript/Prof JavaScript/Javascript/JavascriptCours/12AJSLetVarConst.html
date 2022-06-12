@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h1>Prompt</h1>
+<script>
+
+  //let maVar = true; // Il n’est pas obligatoire de déclarer une variable
+  //let maVar;
+
+  let maVar = 0; // Il n’est pas obligatoire de déclarer une variable
+  console.log(maVar);
+  // Retourne 0;
+  maVar = 12;
+  console.log(maVar);
+  // Retourne 12
+
+  //Sa principale caractéristique est sa portée :
+  // elle est limité à celle du bloc courant.
+  // Pour rappel, un bloc en Javascript, c’est
+  // ce qu’on retrouve entre accolades
+  function test(){
+    if( 1 === 1 ){
+      let maVarA = true;
+      console.log(maVarA);
+      // Retourne true
+    }
+    console.log(maVarA);
+    // Retourne une erreur, let n'existe pas hors du bloc "if"
+  }
+
+  //A l’inverse de let, const a besoin d’être déclaré avec une valeur initiale.
+  const CONFIG;  // Retourne une erreur, il manque la valeur
+
+  const CONFIG = 'maConfig'; // bonne déclaration
+  //La portée de const est celle du bloc, comme la déclaration let
+  function test(){
+    if( 2 === 2 ){
+      const CONFIGA = 12;
+      console.log(CONFIGA);
+      // Retourne 12
+    }
+    console.log(CONFIGA);
+    // Retourne une erreur, config n'existe que dans le bloc courant
+  }
+
+  const CONFIGB = true;
+  const CONFIGB = false;
+  // Retourne une erreur, on ne peut pas déclarer
+  // une autre constante avec le même nom
+  let CONFIGB = false;
+  // Retourne aussi une erreur, cela
+  // ne fonctionne pas non plus en déclarant
+  // une variable avec le même nom
+
+
+  // C’est la plus connue, celle qui existe
+  // depuis Javascript 1.0. On peut résumer,
+  // même si c’est plus subtile que ça, que var
+  // est similaire à let, mais avec une portée de
+  // fonction (là ou let a une portée de bloc).
+  var maVarC = 'valeur';
+
+  var maVariable;
+  console.log(maVariable);
+  // Retourne undefined
+
+  /*
+  La portée de la variable est celle du contexte
+  dans lequel elle est déclarée :
+
+- Si elle est déclarée dans une fonction, la
+portée est celle de la fonction, qu’importe
+le bloc dans lequel elle se trouve.
+- Si elle est déclarée hors d’une fonction,
+la portée sera celle du contexte global.
+La déclaration sans instruction var
+(exemple : maVar = ‘test’) revient à écrire var maVar = ‘test’
+dans un contexte global. La variable devient donc une propriété
+de l’objet global (Objet window en javascript).
+
+   */
+
+  function test(){
+    maVar = 'valeur';
+  }
+  test();
+  console.log(maVar);
+  // Retourne 'valeur'
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.backgroundimagedisque {
+    background-image: url('../img/platforme.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+#fixedposition {
+    position: relative;
+    background: rgba(0, 0, 0, 0.9);
+    color: #f1f1f1;
+    margin: auto;
+    width: 90%;
+    top: 30px;
+    min-height: 900px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 90%;
+    height: 290px;
+    resize: none;
+}
+
+.input {
+    width: 90%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    align-content: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.btn {
+    position: absolute;
+    bottom: 11%;
+    right: 13%;
+    height: 6%;
+    width: 75%;
+    border: solid 1px;
+    background-color: rgb(29, 230, 11);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.okbtn {
+    bottom: 4%;
+    background-color: rgb(235, 8, 8);
+}
+
+.container {
+    float: left;
+    width: 45%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container2 {
+    float: right;
+    width: 45%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio {
+    margin-left: 60px;
+}
+
+.chiffre {
+    color: black;
+    margin-left: 10px;
+}
+
+label {
+    margin-top: 2%;
+}
+
+b {
+    font-size: 30px;
+}
+
+button:hover {
+    opacity: 0.8;
+}

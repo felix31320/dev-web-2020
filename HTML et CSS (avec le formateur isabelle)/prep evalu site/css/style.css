@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+body{
+	margin: 0px;
+}
+header{ 
+	background-image: url(../Sliders/Montagne.png);
+	background-repeat: no-repeat;
+	height: 800px;
+	width: 100%;
+}
+.logo{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-left: 174px;
+}
+.flex-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.margin-menu{
+	margin-left:20px;
+	margin-top: 40px;
+	font-family: 'Roboto';
+	font: Bold 18px/24px Roboto;
+}
+#equipe{
+	color: white;
+}
+#equipe:hover{
+	color: #E04F12;
+	border-bottom: 2px solid #E04F12;
+}
+.white{
+	color: white;
+}
+.border{
+	border:1px solid #E04F12;
+	height: 23px;
+}
+.border1{
+	border:1px solid #E04F12;
+	opacity: 0.2;
+	height: 23px;
+}
+#separer{
+	margin-left: 60px;
+}
+.margin-logo{
+	margin-top: 40px;
+	margin-left: 2px;
+	margin-right: 2px;
+	width: 25px;
+	height: 25px;
+}
+#imagebas{
+	float: right;
+	margin-top: 68px;
+}
+#titre{
+	position: absolute;
+	font-size: 50px;
+	margin-top: 200px;
+	margin-left: 180px;
+	color: #FFFFFF;
+	font-family: 'Roboto';
+	font: Light 80px/145px Roboto;
+	font-weight: 300;
+}
+#bientot{
+	font-size: 70px;
+	font-weight: bold;
+}
+.GROStitre{
+	margin-top: 50px;
+	text-align: center;
+	font: bold 30px/45px Roboto;
+	color: #333333;
+}
+.hr{
+	text-align: center;
+	width: 11%;
+	color: #E04F12;
+	margin-bottom: 50px;
+}
+.flex-lig{
+	display: flex;
+	flex-direction: column;
+}
+.flex-col{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.image-left{
+	margin-left: 225px;
+	margin-top: 70px;
+}
+.text1{
+	width: 50%;
+	text-align: justify;
+	margin-right: 230px;
+	margin-top: 30px;
+	font-family: 'Roboto'
+}
+.titre-1{
+	font-weight: bold;
+	font-size: 20px;
+}
+.hr1{
+	color: #E04F12;
+	width: 13%;
+	margin-left: 0px;
+}
+#margin-bottom{
+	margin-bottom: 30px;
+}
+#section3{
+	background-color: #F1F1F1;
+	height: 646px;
+}
+.GROStitre1{
+	padding-top: 50px;
+	text-align: center;
+	font: bold 30px/45px Roboto;
+	color: #333333;
+}
+.background-white{
+	background-color: white;
+	width: 310px;
+	font-family: "Roboto"
+}
+#margin-left{
+	margin-left: 170px;
+}
+#margin-right1{
+	margin-right: 170px;
+}
+.titre-equipe{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+.qui-equipe{
+	padding-top: 5px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 11px;
+	opacity: 0.4;
+}
+.text-equipe{
+	padding-left: 20px;
+	width: 80%;
+	font-size: 11px;
+	opacity: 0.5;
+}
+.read{
+	padding-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.section4{
+	background-image: url(../Images/background-calm-clouds-747964.jpg);
+	height: 850px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: 1;
+	margin-top: 50px;
+}
+.background-black{
+	background-color: rgba(0,0,0,0.4);
+	height: 850px;
+}
+.GROStitre2{
+	padding-top: 50px;
+	text-align: center;
+	font: bold 30px/45px Roboto;
+	color: white;
+}
+.contact-flex{
+	display: flex;
+	flex-direction: column;
+}
+.citation{
+	color: white;
+	padding-bottom: 5px;
+	margin-left: 360px;
+	font-family: "Roboto";
+}
+.input{
+	width: 46%;
+	padding: 7px;
+	border-radius: 5px;
+	border:2px solid #E04F12;
+	margin-left: 360px;
+	margin-bottom: 25px;
+	font-family: "Roboto";
+}
+.textarea{
+	width: 46%;
+	padding: 7px 7px 80px 7px;
+	border-radius: 5px;
+	border:2px solid #E04F12;
+	margin-left: 360px;
+	margin-bottom: 25px;
+	font-family: "Roboto";
+	resize: none;
+}
+.submit{
+	width: 8%;
+	margin-left: 360px;
+	padding: 10px 20px 10px 20px;
+	font-family: "Roboto";
+	border-radius: 5px;
+	color: white;
+	background-color: #E04F12;
+	border:2px solid #E04F12;
+	font-weight: bold;
+}
+#partager{
+	text-align: center;
+	font-family: "Roboto";
+	margin-top: 20px;
+}
+.border2{
+	border:1px solid grey;
+	padding: 3px 15px 0px 15px;
+}
+.A{
+	margin-left: 597px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.color{
+	background-color: #E04F12;
+}
+.footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

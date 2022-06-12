@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h1>Fonction if (=si)</h1>
+
+<script>
+  var a = 10;
+  if (a > 10) { // 10 > 10  FAUX
+    document.write('la valeur a est supérieur à 10 <br>'); // 11, 12, 13 FAUX
+    console.log('la valeur a est supérieur à 10'); // 11, 12, 13  FAUX
+  } else if ( a < 10) { // 5 < 10 FAUX
+    document.write('la valeur a est inférieur à 10 <br>'); // 9 ,8 ... FAUX
+    console.log('la valeur a est inférieur à 10');
+  } else {
+    document.write('la valeur a est égale à 10 <br>'); // 10 VRAI
+    console.log('la valeur a est égale à 10'); // 10 VRAI
+  }
+
+  var b = prompt('Entrer une valeur');
+  if (b > 10) { // b > 10  // VERIFIER SI VRAI
+    document.write('la valeur b '+ b +'  est supérieur à 10 <br>');
+    console.log('la valeur b '+ b +'  est supérieur à 10');
+  } else if ( b < 10) { // b < 10   SINON SI A VERIFIER
+    document.write('la valeur b '+ b +' est inférieur à 10 <br>');
+    console.log('la valeur '+ b +' est inférieur à 10');
+  } else { // b = 10 // SINON
+    document.write('la valeur b '+ b +' est égale à 10 <br>');
+    console.log('la valeur b '+ b +' est égale à 10');
+  }
+
+</script>
+
+
+</body>
+</html>

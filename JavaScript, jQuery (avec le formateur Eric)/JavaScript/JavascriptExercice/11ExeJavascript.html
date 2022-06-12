@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#afficher{
+				background-color: grey;
+				height: 200px;
+				width: 200px;
+			}
+		</style>
+		<script>
+			var x = 1
+			function cliquer() {
+				x +=1
+				
+				document.getElementById('afficher').innerHTML = x;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<script>
+
+		</script>
+		<form name="formulaire">
+			<div id="afficher">1</div>
+			<input type="button" value="clique" onclick="cliquer()">
+		</form>
+	</body>
+</html>

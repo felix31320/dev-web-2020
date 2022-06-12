@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function ajouteText() {
+      var prenom = prompt('Entre votre prénom');
+      document.getElementById('elementinner').innerHTML='<span style="color:red;font-size:60px">'
+              + prenom + '</span>';
+    }
+  </script>
+</head>
+<body>
+<h1>innerHTML</h1>
+<p> Bienvenue à toi <span id="elementinner">visiteur</span></p>
+<input type="button" value="click" onclick="ajouteText()">
+
+
+
+</body>
+</html>

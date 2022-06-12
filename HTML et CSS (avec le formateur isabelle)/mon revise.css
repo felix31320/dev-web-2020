@@ -1,0 +1,130 @@
+.pourtout{ /* attention, si je mets class alors je mets "." toujours un point au debut*/
+	text-align: center; 
+	background-color: blue;
+}
+
+#unique{ /* attention, si je mets id alors je mets "#" toujours # au debut */
+	text-align: right;
+	border: 3px solid black;
+	border-radius: 100px;
+}
+
+#fixed-opacity{
+	background-image: url(HTMLCSS.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.input1:hover{ /* hover, le souris touche sur un truc, il present une chose*/
+	background-color: black;
+	color: white;
+}
+
+.input2:focus{ /* focus, le souris clique une fois, il present une chose*/
+	background-color: black;
+	color: white;
+}
+
+.input3:active{ /* active, le souris clique une fois, il present une chose puis elle disparaitra */
+	background-color: black;
+	color: white;
+}
+
+#arial{
+	font-family: arial;
+}
+
+div em{ /* ".. .." ca veut dire que la condition comme la probabilite*/
+	background-color: green;
+}
+
+#important{
+	color: red;
+	font-weight: bold !important; /*important est comme forcement si elle ne marche pas*/
+	font-size: 25px;
+}
+
+#sousligne{
+	text-decoration: underline; /*souligne*/
+	font-style:italic;
+}
+
+#barrer{
+	text-decoration:line-through; /*barrer*/
+	font-variant: small-caps;
+}
+
+#citation{
+	text-indent: 250px;
+}
+
+#mot{
+	letter-spacing: 10px;
+}
+
+#width{
+	color:white;
+	background-color: black;
+	width: 500px;
+}
+
+#margin{
+	margin-left: 800px; /*margin est la place de l'exterieur, padding est la place de l'interieur*/
+}
+
+#padding{
+	border:solid black 5px; /*border y a plusieur valuer : form,color,size*/
+	border-bottom-style: dotted; 
+	padding: 10px 10px 10px 250px;
+}
+
+#position{
+	font-size: 30px;
+	position:relative; /*absolute est l'exterieur, relatic est l'interieur */
+}
+
+#visibility{
+	visibility: visible;
+}
+
+#zindex{
+	z-index: 10px; /* z-index est comme priorite d'afficher*/
+}
+
+#float-L{
+	float: left;
+	margin-left: 300px;
+}
+
+#float-R{
+	float: right;
+	margin-right: 400px;
+}
+
+#drapeau-france{
+	background-image: linear-gradient(to right,blue, white, red);
+	padding: 50px;
+	color: white;
+	text-shadow: 4px 1px 7px rgba(0,0,0,0.79); /* derriere du texte */
+	box-shadow: 26px 25px 12px 13px rgba(0,0,0,0.91);
+}
+
+div ul li{
+	list-style: none;
+	background-image: url(https://previews.123rf.com/images/artsonik/artsonik1603/artsonik160300123/52901259-vector-illustration-d-une-bataille-des-armes-%C3%A0-feu-flat-ic%C3%B4ne-arme-%C3%A0-feu-noir-comme-un-pistolet-.jpg);	
+	background-size: 20px;
+	background-repeat: no-repeat;
+	padding-left:25px;
+}
+#flex{
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+.rectangle{
+	border:solid black;
+	padding: 5px 20px 5px 20px;
+	margin: 0px 30px 0px 30px;
+}
+

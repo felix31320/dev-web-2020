@@ -1,0 +1,374 @@
+@font-face {
+	font-family: 'Poppins-Light';
+	src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url('../fonts/Poppins-Medium.ttf');
+}
+/* - - BODY - - */
+body{
+	margin:0;
+	padding: 0;
+	scroll-behavior:smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+/*- - NAV - -*/
+nav{
+	background:rgba(36,36,36,255);
+	height: 75px;
+	padding: 0 90px;
+	
+}
+
+.hide-reseaux-responive{
+	display: none;
+	width: 100%;
+	height: 15%;
+	
+}
+
+.lignemenu{
+	
+	margin-top: 50px;
+	width: 150px;
+	height: 3px;
+	background: white !important;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 9px;
+
+}
+
+.flex-reseaux{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 220px;
+	width: 100%;	
+}
+
+.flex-reseaux a{
+	margin: 0 20px;
+	padding: 0 !important;	
+}
+
+	.icon-reseaux, .icon-reseaux2{
+		fill: #ffffff;
+		transition: all 0.3s;
+	}
+
+	.a-facebook:hover .icon-reseaux, .a-twitter:hover .icon-reseaux {
+		fill: #584BEB;
+	}
+
+	.a-facebook:hover .icon-reseaux, .a-twitter:hover .icon-reseaux {
+		fill: #584BEB;
+	}
+
+	.a-instagram:hover .icon-reseaux2{
+		fill: #584BEB;
+	}
+
+
+	
+	
+	
+
+
+@media screen and (max-width: 991px) {
+	nav{
+		
+		padding: 0 0px;
+		
+	}
+
+	.logo{
+		width: 140px;
+		margin: 0 !important;
+		padding: 0 0 0 20px;
+	}
+
+	.navbar-brand{
+		padding: 0 !important;
+		margin: 0;
+	}
+
+	.hide-reseaux-responive{
+		display:block;
+		
+		
+		position: relative;
+	}
+
+	
+
+	#ButtonHamburger{
+		justify-content: flex-end;
+		padding: 50px 0;
+		text-align: left;
+		height : calc(100vh);
+		
+		background:rgba(36,36,36,255);
+		z-index: 10;
+		
+		transition: height 0.001s !important;
+		animation: fadein 0.2s;
+		
+		
+	}
+
+	#ButtonHamburger a{
+		font-family: 'Poppins-Medium';
+		font-size: 22px;
+		padding-left: 30px;
+	}
+
+	
+	
+	#ButtonHamburger .a:hover::after{
+		width:0%;
+		
+	}
+	#ButtonHamburger ul{
+		width: 100%;
+		height: 100%;	
+	}
+
+	.item1{
+		height: 92px;
+		background-image: url(../images/Qui_sommes_nous.png);
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 40%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	.item2{
+		height: 92px;
+		background-image: url(../images/Realisations.png);
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	.item3{
+		height: 92px;
+		background-image: url(../images/Nos_clients.png);
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	.item4{
+		height: 92px;
+		background-image: url(../images/Devis.png);
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	.item5{
+		height: 92px;
+		background-image: url(../images/Nous_contacter.png);
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+
+
+	@keyframes fadein {
+		from {
+			opacity:0;
+		}
+		to {
+			opacity:1;
+		}
+	}	
+}
+ 
+.logo{
+	
+	width:150px;
+	margin: 14px 0 14px 15px;
+	height: auto;
+		image-rendering: -webkit-optimize-contrast;
+	
+
+}	
+
+nav ul{
+	margin-top: 10px;
+}
+.a{
+	font-family:'Poppins-Light';
+	font-size:16px;
+	line-height: 45px;
+	margin:20px;
+	text-align: left;
+	letter-spacing: 0px;
+	position: relative;
+	display: inline-block;
+	color: white ;
+}
+
+.a:hover{
+	color: white;
+}
+
+.a::after{
+	border-bottom: 10px;
+	position: absolute;
+	content:"";
+	height:15px;
+	left: -5px;
+	top:12px;
+	z-index: 1px;
+	background: transparent linear-gradient(180deg, #584BEB60 0%, #4136F1D1 100%) 0% 0% no-repeat padding-box;
+	display:block;
+	width: 0;
+	transition:width .3s;
+	color: white;
+}
+
+.a:hover::after{
+	width:100%;
+	transition: width .3s;
+	color: white;
+}
+
+
+.animated-icon1{
+	width: 35px;
+	height: 20px;
+	position: relative;
+	margin: 0px 15px 0 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	}
+	
+	.animated-icon1 .iconmoinslong{
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 80%;
+	border-radius: 9px;
+	opacity: 1;
+	right: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+	}
+
+	.animated-icon1 .iconpluslong{
+		display: block;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		border-radius: 9px;
+		opacity: 1;
+		left: 0;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-transition: .25s ease-in-out;
+		-moz-transition: .25s ease-in-out;
+		-o-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
+		}
+	
+	.animated-icon1 span {
+	background: #FFF;
+	}
+	
+	
+	
+	.animated-icon1 span:nth-child(1) {
+	top: 0px;
+	}
+	
+	.animated-icon1 span:nth-child(2) {
+	top: 10px;
+	}
+	
+	.animated-icon1 span:nth-child(3) {
+	top: 20px;
+	}
+	
+	.animated-icon1.open span:nth-child(1) {
+	top: 11px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+	}
+	
+	.animated-icon1.open span:nth-child(2) {
+	opacity: 0;
+	left: -60px;
+	}
+	
+	.animated-icon1.open span:nth-child(3) {
+	top: 11px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	}
+
+	.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+	
+}
+
+.navbar-collapse{
+	display: flex;
+	justify-content: end;
+	
+}
+
+

@@ -1,0 +1,20 @@
+identifiant de connexion FTP :
+
+hôte : nqyb.ftp.infomaniak.com
+
+Utilisateur : nqyb_friscourt
+
+Mot de passe : $friscourt_2020$
+
+
+Identifiant de BDD, connexion à 
+https://h2-phpmyadmin.infomaniak.com/index.php
+
+Hôte : nqyb.myd.infomaniak.com
+
+Utilisateur : nqyb_friscourt
+
+Mot de passe : $friscourt_2020$
+
+site : 
+http://friscourt.sourdoues.com/projet%20alex%202/connexion.php

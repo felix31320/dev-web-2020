@@ -1,0 +1,25 @@
+.noir{
+	background-color: grey;
+	color: white;
+	width: 100px;
+	box-sizing: border-box;
+	padding: 20px;
+	margin:50px 100px;
+	transition-duration: 2s;
+	position: relative;
+}
+.clique{
+	text-align: center;
+}
+.souligne{
+	background-color: black;
+	width: 2%;
+	height: 5px;
+	position: absolute;
+	
+	top: 80%;
+}
+.souligne:hover{
+	width: 50%;
+	transition-duration: 2s;
+}

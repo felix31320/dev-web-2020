@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      text-align: center;
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<table border="0">
+
+  <script>
+    for(j=-1;j<=10;j++) {
+      document.write('<tr>');
+      document.write('<td style="background-color: #ccf8ff">'+ (j==-1?'':j) +'</td>');
+      for (i = 0; i <= 10; i++) {
+        var StrStyle = (j==-1?'style="background-color: #ccf8ff"':'');
+        document.write('<td '+ StrStyle + '>'+ Math.abs(j * i) +'</td>');
+      }
+      document.write('</tr>');
+    };
+  </script>
+</table>
+
+
+</body>
+</html>

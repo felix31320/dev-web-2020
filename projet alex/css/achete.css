@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.backgroundimage {
+    position: relative;
+    background: url(https://s3.gaming-cdn.com/images/products/4211/background/4211.jpg)center 0% no-repeat rgb(0, 0, 0);
+    width: 100%;
+}
+
+#achetebackground {
+    position: relative;
+    margin: auto;
+    background-color: #6E7074;
+    width: 1075px;
+    height: 870px;
+}
+
+#acheteproduits {
+    background-color: white;
+    width: 1055px;
+    height: 850px;
+    border-radius: 10px;
+    transform: translate(1%, 1%);
+    -webkit-transform: translate(1%, 1%);
+    -moz-transform: translate(1%, 1%);
+    -ms-transform: translate(1%, 1%);
+    -o-transform: translate(1%, 1%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#achetejeu {
+    background-color: #6E7074;
+    opacity: 0.8;
+    width: 95%;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    border: solid 3px;
+}

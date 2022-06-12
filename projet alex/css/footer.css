@@ -1,0 +1,26 @@
+.footer{
+    background-color: #343A40;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footerlogo{
+    margin-top: 30%;
+    margin-left: 0%;
+}
+.footercolumn{
+    display: flex;
+    flex-direction: column;
+}
+.espacebottom{
+    margin-bottom: 4%;
+}
+.motfooter{
+    text-decoration: none;
+    color:white;
+}
+.motfooter:hover{
+    text-decoration: underline;
+}

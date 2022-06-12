@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#contenair{
+				width: 270px;
+				margin-bottom: 50px;
+			}
+			#ecran{
+				background-color: blue;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding:15px 17px;
+			}
+			#petitecran{
+				opacity: 0.5;
+				font-size: 17px;
+				height: 40px;
+				word-wrap: break-word;
+				text-align: right;
+			}
+			#grandecran{
+				font-size: 45px;
+				text-align: right;
+			}
+			#pave{
+				background-color: grey;
+				border-bottom-left-radius:10px;
+				border-bottom-right-radius: 10px;
+				text-align: center;
+				padding:5px 0px;
+			}
+			.inline-block{
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				margin: 5px;
+				background-color: red;
+				border-radius: 100px;
+				text-align: center;
+				font-size: 24px;
+				line-height: 50px;
+				box-shadow: 0px 0px 44px -7px rgba(0,0,0,0.7);
+				cursor: pointer;
+			}
+			#egale{
+				background-color: white;
+			}
+		</style>
+		<script>
+			var OpEval = '';
+			var OpEcran = '';
+			var OpEcranChiffre = '';
+
+			function AjouterChiffre(Option) {
+				
+				document.getElementById('grandecran').innerHTML = '0.';
+
+				if (Option == 'sup') {
+					OpEcranChiffre = OpEval.length;
+		
+					OpEcran = OpEcran.substring(0,OpEcranChiffre-1);
+					OpEval = OpEval.substring(0,OpEcranChiffre-1);
+
+				}
+				else{
+
+						if (Option == '*') {
+							OpEcran = OpEcran + 'x';
+						}
+						else {
+							OpEcran = OpEcran + Option;
+						}
+						
+						if (Option == '=') {
+							OpEval = OpEval + '';
+							// faire le calcul
+							document.getElementById('grandecran').innerHTML = eval(OpEval);
+						}
+						else {
+							OpEval = OpEval + Option;
+						}	
+					
+					}
+					document.getElementById('petitecran').innerHTML = OpEcran;
+					document.getElementById('infoEval').innerHTML = OpEval;
+			}
+
+			function vide() {
+				OpEval = '';
+				OpEcran = '';
+				AjouterChiffre('');
+			}
+		</script>
+	</head>
+	<body>
+		<div id="contenair">
+			<div id="ecran">
+				<div id="petitecran"></div>
+				<div id="grandecran">0.</div>
+			</div>
+			<div id="pave">
+				<div class="inline-block" onclick="vide()">CE</div>
+				<div class="inline-block" onclick="AjouterChiffre('(')">(</div>
+				<div class="inline-block" onclick="AjouterChiffre(')')">)</div>
+				<div class="inline-block" onclick="AjouterChiffre('sup')">←</div>
+				<div class="inline-block" onclick="AjouterChiffre('7')">7</div>
+				<div class="inline-block" onclick="AjouterChiffre('8')">8</div>
+				<div class="inline-block" onclick="AjouterChiffre('9')">9</div>
+				<div class="inline-block" onclick="AjouterChiffre('+')">+</div>
+				<div class="inline-block" onclick="AjouterChiffre('4')">4</div>
+				<div class="inline-block" onclick="AjouterChiffre('5')">5</div>
+				<div class="inline-block" onclick="AjouterChiffre('6')">6</div>
+				<div class="inline-block" onclick="AjouterChiffre('-')">-</div>
+				<div class="inline-block" onclick="AjouterChiffre('1')">1</div>
+				<div class="inline-block" onclick="AjouterChiffre('2')">2</div>
+				<div class="inline-block" onclick="AjouterChiffre('3')">3</div>
+				<div class="inline-block" onclick="AjouterChiffre('*')">*</div>
+				<div class="inline-block" onclick="AjouterChiffre('0')">0</div>
+				<div class="inline-block" onclick="AjouterChiffre('.')">.</div>
+				<div class="inline-block" onclick="AjouterChiffre('/')">/</div>
+				<div class="inline-block" id="egale" onclick="AjouterChiffre('=')">=</div>
+			</div>
+		</div>
+		<p>Apercu OpEval pour eval</p>
+		<div id="infoEval"></div>
+	</body>
+</html>
+

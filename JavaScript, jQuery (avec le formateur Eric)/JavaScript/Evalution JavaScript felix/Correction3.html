@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #idRegle{
+      width: 700px;
+      height: 550px;
+      background-color: #c9f7ff;
+      border: 1px solid gray;
+      position: relative;
+      margin-left: 50px;
+    }
+    .clsTrait{
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background-color: black;
+      left: 15px;
+      top: 550px;
+    }
+    .clsText{
+      position: absolute;
+      font-size: 22px;
+      top: 572px;
+      left: 15px;
+      transform: translate(-50%,0);
+    }
+    .clsGrilleVerti{
+      width: 2px;
+      height: 550px;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      background-color: #2222de;
+    }
+    .clsGrilleHorti{
+      width: 700px;
+      height: 2px;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      background-color: #2222de;
+    }
+    .clsTraitMoriz{
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      right: 700px;
+    }
+    .pointer{
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: red;
+    }
+    .pointerr{
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+<div id="idRegle">
+  <script>
+    var intLeft = 0;
+    var strHeight = '';
+
+    for(a=0;a<=70;a++){
+      intLeft = a*10;
+      
+      if (a%10 == 0) {
+        strHeight = 'height: 20px;';
+      }  else if (a%10 == 5) {
+        strHeight = 'height: 15px;';
+      }
+      else {
+        strHeight = 'height: 10px;';
+      }
+
+      document.write('<div class="clsTrait" style="left: '+ intLeft +'px;'+ strHeight +'"></div>');
+
+
+      if (a%10 == 0) {
+
+        if (a>0) {
+          document.write('<div class="clsGrilleVerti" style="left:' + intLeft + 'px;"></div>');
+        }
+        document.write('<div class="clsText" style="left:'+ intLeft + 'px;">' + a + '</div>');
+
+      } else if(a%10 == 5) {
+          document.write('<div class="clsGrilleVerti" style="left:' + intLeft + 'px; width:1px;"></div>');
+      }
+    }
+
+    // ordonne
+
+    var intTop = 560;
+    var strwidth = 'width: 10px;';
+    var intTopChiffre = 560;
+
+    for(a=0;a<=55;a++){
+
+      intTop = intTop -10;
+      intTopChiffre = intTopChiffre -10;
+
+      if (a%10 == 0) {
+
+      strwidth = 'width: 20px;';
+      document.write('<div class="clsText" style="left: -35px;top: ' + intTopChiffre + 'px;">' + a + '</div>');
+      if (a>0) {
+          document.write('<div class="clsGrilleHorti" style="right: 700px;top: ' + intTopChiffre + 'px;"></div>');
+        }
+
+      } else if (a%10 == 5){
+
+        strwidth = 'width: 15px;';
+        
+        document.write('<div class="clsGrilleHorti" style="right: 700px;top: ' + intTopChiffre + 'px; height:1px;"></div>');
+
+
+      } else {
+
+        strwidth = 'width:10px;';
+
+      }
+      document.write('<div class="clsTraitMoriz" style="top: ' + intTop + 'px; ' + strwidth + '"></div>');
+    }
+
+
+    var x = 0;
+    var y = 0;
+    for(x=0;x<70;x++){
+      var placecoubre = x*10;
+
+      y = (((1/2)*x)+10)*10;
+
+      document.write('<div class="pointer" style="bottom: ' + y + 'px; left: ' + placecoubre + 'px;"></div>');
+    }
+
+    var u = 0;
+    var v = 0;
+    for(u=0;u<70;u++){
+      var placecoubr = u*10;
+
+      v = (5/100)*(u*u)*10;
+
+      document.write('<div class="pointerr" style="bottom: ' + v + 'px; left: ' + placecoubr + 'px;"></div>');
+
+    }
+
+
+
+
+  </script>
+</div>
+</body>
+</html>

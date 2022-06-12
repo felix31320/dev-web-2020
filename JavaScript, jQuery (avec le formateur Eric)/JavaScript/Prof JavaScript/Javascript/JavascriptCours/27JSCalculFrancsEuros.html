@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function calculFrancsEuros() {
+      var x = document.formulaire.champ.value;
+      document.formulaire.champ.value = x/6.55;
+    }
+    function calculEurosFrancs() {
+      var x = document.formulaire.champ.value;
+      document.formulaire.champ.value = x*6.55;
+    }
+  </script>
+</head>
+<body>
+<h1>Calcul Francs en Euros et Euros en Francs</h1>
+<form name="formulaire">
+  <input type="text" name="champ" size="40px"><br>
+  <input type="button" value="Francs en Euros" onclick="calculFrancsEuros()">
+  <input type="button" value="Euros en Francs" onclick="calculEurosFrancs()">
+</form>
+
+</body>
+</html>

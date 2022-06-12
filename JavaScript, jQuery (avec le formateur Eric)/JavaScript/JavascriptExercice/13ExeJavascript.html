@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#regle{
+				background-color:grey;
+				height: 80px;
+				width: 750px;
+				border:1px solid black;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				position: relative;
+			}
+			.colonne{
+				border-left: 1px solid;
+				position: absolute;
+			}
+			.chiffre{
+				position: absolute;
+				top: 26px;
+				transform: translate(-50%,0);
+				border:1px solid black;
+				padding: 0px 3px 3px 3px;
+				border-radius: 40%;
+			}
+		</style>
+		<script>
+			
+		</script>
+		
+	</head>
+	<body>
+		<div id="regle">
+			<script>
+				var j = 0;
+
+				for(i=0;i<71;i+=1){
+
+					j=i*10+20;
+
+					if (i%10==0) {
+
+					document.write('<div class="colonne" style="left: ' + j + 'px; height: 25px;"></div>');
+					document.write('<div class="chiffre" style="left: ' + j + 'px; height: 15px;">' + i + ' </div>');
+		
+					} else if (i%10==5) {
+
+						document.write('<div class="colonne" style="left: ' + j + 'px; height: 20px;"></div>');
+					}else {
+
+						document.write('<div class="colonne" style="left: ' + j + 'px; height: 15px;"></div>');		
+
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>
+

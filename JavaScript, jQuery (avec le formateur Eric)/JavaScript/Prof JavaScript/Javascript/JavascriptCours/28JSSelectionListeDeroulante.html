@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function cmdValid() {
+      document.formulaire.champ1.value = document.formulaire.ChoixPays.value;
+    }
+  </script>
+</head>
+<body>
+<h1>Capital d'un pays aux choix</h1>
+<form name="formulaire">
+  <select name="ChoixPays">
+    <option value="Paris">FRANCE</option>
+    <option value="Madrid">ESPAGNE</option>
+    <option value="Rome">ITALIE</option>
+    <option value="Berlin">ALLEMAGNE</option>
+    <option value="Moscou">RUSSIE</option>
+    <option value="Kinshasa">CONGO</option>
+  </select>
+  <input type="text" name="champ1">
+  <input type="button" value="Valider" onclick="cmdValid()">
+</form>
+
+</body>
+</html>

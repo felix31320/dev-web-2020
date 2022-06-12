@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Correction2</title>
+		<style>
+			table{
+				border-collapse: collapse;
+				width: 750px;
+			}
+			td{
+				border:1px solid black;
+				text-align: center;
+				padding:10px 5px;
+			}
+			.clearborder{
+				border:none;
+			}
+			input[type="text"]{
+				width: 100%;
+				border:none;
+				text-align: center;
+				font-size: 16px;
+			}
+			input[type="text"]:focus{
+				width: 50%;
+				background-color: yellow;
+			}
+		</style>
+		<script>
+			function calculer() {
+				var PU1 = document.formulaire.PU1.value;
+				var Q1 = document.formulaire.Q1.value;
+				var PU2 = document.formulaire.PU2.value;
+				var Q2 = document.formulaire.Q2.value;
+
+				var HT1 = PU1 * Q1;
+				var HT2 = PU2 * Q2;
+
+				var TVA1 = PU1 * 0.2;
+				var TVA2 = PU2 * 0.2;
+
+				var TTC1 = HT1 + TVA1;
+				var TTC2 = HT2 + TVA2;
+
+				var total = TTC1 + TTC2;
+
+				document.getElementById('HT1').innerHTML = HT1.toFixed(2) + ' €';
+				document.getElementById('TVA1').innerHTML = TVA1.toFixed(2) + ' €';
+				document.getElementById('TTC1').innerHTML = TTC1.toFixed(2) + ' €';
+
+				document.getElementById('HT2').innerHTML = HT2.toFixed(2) + ' €';
+				document.getElementById('TVA2').innerHTML = TVA2.toFixed(2) + ' €';
+				document.getElementById('TTC2').innerHTML = TTC2.toFixed(2) + ' €';
+
+				document.getElementById('total').innerHTML = total.toFixed(2) + ' €';
+			}
+
+			function supprime() {
+				document.formulaire.PU1.value = '';
+				document.formulaire.Q1.value = '';
+				document.formulaire.PU2.value = '';
+				document.formulaire.Q2.value = '';
+
+				document.getElementById('HT1').innerHTML = '';
+				document.getElementById('TVA1').innerHTML = '';
+				document.getElementById('TTC1').innerHTML = '';
+
+				document.getElementById('HT2').innerHTML = '';
+				document.getElementById('TVA2').innerHTML = '';
+				document.getElementById('TTC2').innerHTML = '';
+
+				document.getElementById('total').innerHTML = '';
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulaire">
+			<table>
+				<tr>
+					<td>Descriptif</td>
+					<td>Prix unitaire</td>
+					<td>Quantite</td>
+					<td>HT</td>
+					<td>TVA 20%</td>
+					<td>TTC</td>
+				</tr>
+				<tr>
+					<td>Produits 1</td>
+					<td><input type="text" name="PU1"></td>
+					<td><input type="text" name="Q1"></td>
+					<td id="HT1"></td>
+					<td id="TVA1"></td>
+					<td id="TTC1"></td>
+				</tr>
+				<tr>
+					<td>Produits 2</td>
+					<td><input type="text" name="PU2"></td>
+					<td><input type="text" name="Q2"></td>
+					<td id="HT2"></td>
+					<td id="TVA2"></td>
+					<td id="TTC2"></td>
+				</tr>
+				<tr>
+					<td class="clearborder"></td>
+					<td class="clearborder"></td>
+					<td class="clearborder"></td>
+					<td class="clearborder"></td>
+					<td>Total</td>
+					<td id="total"></td>
+				</tr>
+			</table>
+		</form>
+		<input type="button" value="Calculer" onclick="calculer()">
+		<input type="button" value="supprimer" onclick="supprime()">
+	</body>
+</html>

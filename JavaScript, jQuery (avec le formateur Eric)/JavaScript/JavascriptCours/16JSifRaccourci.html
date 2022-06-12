@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>Fonction if (= si)</h1>
+	
+		<script>
+			var a = prompt('entrer la valeur a') ;
+			if (a > 10 ) { // 10 > 10 FAUX
+				
+				document.write('la valeur a est superieur à 10 <br>'); // 11,12,13
+				console.log('la valeur a est superieur à 10');
+			}
+			else{
+				
+				console.log('la valeur a est inferieur ou egale à 10');
+				document.write('la valeur a est inferieur ou egale à 10 <br>'); // 10,9,8
+			}
+
+			var y = prompt('entrer la valeur y');
+			var b = ( y > 10? true:false );
+			document.write('la valeur y est ' + b + '<br>');
+
+			var z = prompt('entrer la valeur z');
+			var c = ( z > 10? 'superieur<br>':(z < 10?'inferieur<br>':'egale<br>'));
+			document.write('la valeur z est ' + c);
+
+		</script>
+	</body>
+</html>

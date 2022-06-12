@@ -1,0 +1,78 @@
+body{
+	margin: 0px;
+	background-image: url(https://d1fmx1rbmqrxrr.cloudfront.net/zdnet/i/edit/ne/2019/09/iOS-7-Mail-620.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	background-attachment: fixed;
+}
+section{
+	background-color: black;
+	width: 95%;
+	height: 110%;
+	opacity: 0.8;
+	margin: 25px 20px 25px 36px;
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px 0px 10px 0px;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	padding-top: 30px;
+}
+.case-white{
+	background-color: white;
+	width: 25%;
+	padding: 10px 10px 10px 10px;
+	border-radius: 50px;
+	margin: 15px 0px 40px 0px;
+}
+.padding-left{
+	padding-left: 10px;
+}
+.case-message{
+	background-color: white;
+	width: 35%;
+	padding: 10px 20px 90px 20px;
+	border-radius: 21px / 17px;
+	margin: 15px 0px 40px 0px;
+}
+.case-message:focus{
+	background-color: grey;
+	color: white;
+}
+textarea{
+	resize: none;
+	outline: none;
+}
+input{
+	outline: none;
+}
+input:focus{
+	background-color: grey;
+	color: white;
+
+}
+.case-envoyer{
+	background-color: white;
+	width: 10%;
+	padding: 10px 10px 10px 10px;
+	border-radius: 50px;
+	margin: 10px 0px 40px 160px;
+	transition: 0.5s;
+}
+.case-envoyer:hover{
+	background-color: black;
+	color: white;
+}
+img{
+	position: absolute;
+	left: 625px;
+	bottom: 75px;
+	border:outset 10px grey;
+}

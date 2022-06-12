@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<h1>Formule eval et parseInt</h1>
+
+<script>
+  var a = 5;
+  var resultat = eval(a*2);  // Je demande au navigateur de calculer
+  // comme si var resultat = a*2  // pareil eval('a*2');
+
+
+  var resultatB = eval('123.45')
+  document.write('resultat B est ' + resultatB + '<br>');
+  // return 123.45
+
+  var resultatC = parseInt('FF', 16); // Convertir en hexa
+  document.write('resultat C est ' + resultatC + '<br>');
+  // 255
+
+  var resultatD = parseInt('12', 8); // Convertir en octave
+  document.write('resultat D est ' + resultatD + '<br>');
+ // 10
+  var resultatE = parseInt('FFFFFF', 16); // Convertir en hexa
+  document.write('resultat E est ' + resultatE + '<br>');
+  // 15
+  var resultatF = parseInt('300', 10);
+  document.write('resultat F est ' + resultatF + '<br>');
+ //  300
+  var resultatG = parseInt('FF');
+  document.write('resultat G est ' + resultatG + '<br>');
+  // Nan
+  var resultatH = parseInt('11011', 2);
+  document.write('resultat H est ' + resultatH + '<br><br><br>');
+  // 27
+  // parseInt me convertir en numerique décimal
+
+  document.write('Resultat avec parseInt(\'12+3\') : ' + parseInt('12+3')+'<br>');
+  document.write('Resultat avec eval(\'12+3\') : ' + eval('12+3')+'<br>');
+  //document.write('Resultat identique sans eval(\'12+3\') : ' + 12+3 +'<br>');
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

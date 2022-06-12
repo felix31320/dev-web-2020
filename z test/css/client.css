@@ -1,0 +1,195 @@
+/* POLICES */
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-Light';
+	src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	src: url('../fonts/Poppins-SemiBold.ttf');
+}
+/*-----------------CLIENTS-----------------*/
+.clients{
+	width: 100%;
+	background:rgba(250,250,250,255);
+	padding-top:70px;
+	padding-bottom:35px;
+}
+
+.photo-chrome-vv{
+	image-rendering: -webkit-optimize-contrast;
+}
+
+#clients{
+	font-family:'Poppins-Bold';
+	font-size:25px;
+	color:#2d2a26;
+}
+.separators{
+	margin-bottom:30px;
+	margin-left:65px;
+	width:56px;
+	height:2px;
+}
+#textes{
+	
+	
+	font-family:'Poppins-Light';
+	font-size:16px;
+	line-height:22px;
+	color:#212121;
+	display: flex;
+	justify-content: center;
+	
+}
+/*--------- LOGOS CASSOUREL SLIDE ---------*/
+h2{
+	color:#3a3835;
+	font-family:'Lato-Bold';
+	text-align:center;
+	font-weight:bold;
+	line-height:20px;
+}
+	
+#customers-teams .item {
+	height:300px !important;
+	text-align: center;
+	padding: 50px;
+	opacity: .5;
+	-webkit-transform: scale3d(0.7, 0.7, 1);
+	transform: scale3d(0.7, 0.7, 1);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+#customers-teams .item h2{
+	font-size:18px !important;
+	font-weight:500 !important;
+}
+
+
+#customers-teams .owl-item.active.center .item {
+	opacity: 1;
+	-webkit-transform: scale3d(1.0, 1.0, 1);
+	transform: scale3d(1.0, 1.0, 1);
+}
+
+.clients .owl-carousel .owl-item .img-circle {
+	transform-style: preserve-3d;
+	max-width: 120px;
+	margin: 0 auto 17px;
+	transition: transform .5s;
+}
+
+.clients .owl-carousel .owl-item .img-circle:hover {
+	transform: scale(0.9);
+}
+
+#customers-teams.owl-carousel .owl-dots .owl-dot.active span,
+#customers-teams.owl-carousel .owl-dots .owl-dot:hover span {
+	background: #3A3835;
+	transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#customers-teams.owl-carousel .owl-dots{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+#customers-teams.owl-carousel .owl-dots .owl-dot{
+	display: inline-block;
+}
+
+#customers-teams.owl-carousel .owl-dots .owl-dot span {
+	background: #E5E5E5;
+	display: inline-block;
+	height: 20px;
+	margin: 0 2px 5px;
+	/* margin-top:50px; */
+	transform: translate3d(0px, -50%, 0px) scale(0.5);
+	transform-origin: 50% 50% 0;
+	transition: all 250ms ease-out 0s;
+	width: 20px;
+	outline: none;
+	border-radius:50% !important;
+}
+
+.owl-dot, .owl-dot:active, .owl-dot:focus { 
+	outline: 0 !important;	
+}
+
+@media only screen and (max-width: 1000px){
+	#customers-teams.owl-carousel .owl-dots .owl-dot span {
+	height:20px;
+	width:20px;
+	
+	}
+}
+
+#Et_vous{
+	font-family: 'Lato-Bold';
+	font-weight: 500 !important;
+	font-size:17px;
+	line-height:14px;
+	color:#3a3835;
+}
+#consultez{
+	font-family:'Poppins-Light';
+	font-size:17px;
+	line-height:14px;
+	color:#3a3835;
+}
+/*-------- BUTTON " Y ALLER " ---------*/
+#Y_aller{
+	width:121px;
+	height:54px;
+	background: transparent linear-gradient(270deg, #8743FF 0%, #4136F1 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 15px 30px #1466CC29;
+	border-radius:16px;
+	font-family:'Lato-Bold';
+	font-size:14px;
+	transition:0.6s;
+	box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+}
+#Y_aller:hover{
+	transition:0.6s;
+	box-shadow: 14px 14px 28px 28px rgba(0.22,0.22,0.22,0.22), 10px 10px 10px 10px rgba(0.22,0.22,0.22,0.22);
+	
+     transform: scale(1.10, 1.10);
+}
+#Y_aller::after{
+  content: "";
+  border-radius:2px;
+  position:absolute;
+  z-index: -1;
+  box-shadow: 0  5px 10px rgba(154,160,185,0.05),0 15px 40px rgba(166,173,201,0.2);
+  opacity: 0.5;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@media screen and (max-width : 400px) {
+	#consultez{
+		font-size:14px;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+INT = numerique , ex = 12
+DOUBLE = numerique
+VARCHAR = chaine ( MAX 255 ), ex = '...'
+DATE 
+TEXT = chaine ( MAX 65000 )
+BOOL = TRUE, FALSE
+
+Cle primaire UNIQUE = identite ligne ( obligatoire tres conseille )

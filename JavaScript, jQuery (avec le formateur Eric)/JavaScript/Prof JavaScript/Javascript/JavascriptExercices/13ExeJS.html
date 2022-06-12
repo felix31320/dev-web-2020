@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #idRegle{
+      width: 750px;
+      height: 80px;
+      background-color: #c9f7ff;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 1px solid gray;
+      position: relative;
+    }
+    .clsTrait{
+      position: absolute;
+      width: 2px;
+      height: 20px;
+      background-color: black;
+      left: 15px;
+      top: 0px;
+    }
+    .clsText{
+      position: absolute;
+      font-size: 22px;
+      top: 20px;
+      left: 15px;
+      transform: translate(-50%,0);
+    }
+  </style>
+</head>
+<body>
+<div id="idRegle">
+  <script>
+    var intLeft = 0;
+    var strHeight = '';
+    for(a=0;a<=70;a++){
+      intLeft = a*10+20;
+      if (a%10 == 0) {
+        strHeight = 'height: 20px';
+      }  else if (a%10 == 5) {
+        strHeight = 'height: 15px'
+      }
+      else {
+        strHeight = 'height: 10px'
+      }
+      document.write('<div class="clsTrait" style="left: '+ intLeft +'px;'+ strHeight +'"></div>');
+      if (a%10 == 0) {
+        document.write('<div class="clsText" style="left: ' + intLeft + 'px;">' + a + '</div>');
+      }
+    }
+  </script>
+
+</div>
+</body>
+</html>

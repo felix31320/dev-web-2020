@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(202, 201, 201);
+}
+.placeinput{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.input{
+    background-color: #6E7074;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: blue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.recherche{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    margin-right: 10px;
+}
+.rechercheinput{
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+    width: 400px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+}
+tr:first-child{
+   background-color: #cafaff;
+   text-align: center;
+   font-weight: bold;
+}
+.placeliste{
+    margin-left:20%;
+    margin-top: 70px;
+}
+.placelieu{
+    margin-left: 30px;
+}
+.placemodele, .placesupport{
+    margin-left: 40px;
+}
+.placetype{
+    margin-left: 10px;
+}
+.ajouter{
+    padding: 5px;
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.placeliste1{
+    margin-left:20%;
+    margin-top: 90px;
+}
+.white{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+td{
+    background-color: white;
+}
+.placeliste2{
+    margin-left:30%;
+    margin-top: 90px;
+}
+.MAJ{
+    padding: 5px;
+    background-color:green;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.footer{
+    text-align: center;
+    margin-top: 30px;
+}

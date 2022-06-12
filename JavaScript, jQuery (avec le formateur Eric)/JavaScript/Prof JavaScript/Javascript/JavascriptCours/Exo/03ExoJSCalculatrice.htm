@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #Contenair {
+            width: 270px;
+        }
+        #ecran {
+            /* font-size: 45px; */
+            padding: 17px 15px;
+            text-align: right;
+            background: linear-gradient(0.1turn, #9cd1ea, #c9f7ff);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            /* position: relative; */
+            /* padding-top: 12px; */
+            padding-bottom: 6px;
+        }
+        #petitEcran {
+            font-size: 22px;
+            background-color: greenyellow;
+            height: 25px;
+        }
+        #grandErcan {
+            font-size: 50px;
+            background-color: darkgoldenrod;
+            //height: 50px;
+            //overflow: auto;
+        }
+        #pave {
+            background-color: #eeeeee;
+            min-height: 50px;
+            padding: 10px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .clsButton {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #d8d8d8;
+            text-align: center;
+            margin: 6px 4px;
+            display: inline-block;
+            line-height: 50px;
+            font-size: 26px;
+            cursor: pointer;
+            box-shadow: 4px 3px 4px 0px #00000085;
+        }
+    </style>
+    <script>
+        var StrOperationEval = '';
+        var StrOpertionEcran ='';
+        var IntLeng = 0;
+        var BlnBtnEgal = false;
+
+            function EcraninnerHTML(StrOption) {
+            //alert('je t\'écoute, je suis la valeur : ' + StrOption + ' ' + typeof(StrOption)) ;
+            //StrOpertionEcran = StrOpertionEcran + StrOption;
+             document.getElementById('grandErcan').innerHTML = '0.';
+             if (StrOption =='=' && BlnBtnEgal == true) {
+                 StrOperationEval = '';
+                 StrOpertionEcran = '';
+                 document.getElementById('petitEcran').innerHTML = StrOpertionEcran;
+                 document.getElementById('infoEval').innerHTML = StrOperationEval;
+             }
+             if (StrOption === 'sup'){
+                //StrOperationEval = StrOperationEval + '';
+                IntLeng = StrOperationEval.length;
+                console.log('IntLeng : ' + IntLeng + '<br>');
+
+                StrOperationEval = StrOperationEval.substring(0,IntLeng-1);
+                StrOpertionEcran = StrOpertionEcran.substring(0,IntLeng-1);
+
+                //StrOperationEval = StrOperationEval.substring(0,4);
+            } else {
+                
+                if (StrOption == '*'){
+                    StrOpertionEcran = StrOpertionEcran + 'x';
+                } else {
+                    StrOpertionEcran = StrOpertionEcran + StrOption;
+                }
+                //StrOperationEval = StrOperationEval + StrOption;
+                if (StrOption =='='){
+                    StrOperationEval = StrOperationEval + '';
+                    BlnBtnEgal = true;
+                    // Faire le calcul
+                    document.getElementById('grandErcan').innerHTML = eval(StrOperationEval);
+
+                } else {
+                    StrOperationEval = StrOperationEval + StrOption;
+                }
+            }
+
+            document.getElementById('petitEcran').innerHTML = StrOpertionEcran;
+            document.getElementById('infoEval').innerHTML = StrOperationEval;
+        }
+        function EcranClear(){
+            StrOperationEval = '';
+            StrOpertionEcran = '';
+            EcraninnerHTML('');
+            document.getElementById('grandErcan').innerHTML = '0.';
+        }
+
+
+        // console.log(str + ' ' + str.length);
+        var str = 'Mozilla';
+        document.write('A '+ str.substring(1, 3)+'<br>');
+        // expected output: "oz"
+        document.write('B '+ str.substring(2)+'<br>');
+        document.write('C '+ str.length + '<br>');
+        document.write(('D '+ str.substring(1,6))+'<br>');
+        document.write('REPONSE : '+ str.substring(2,4)+'<br>');
+
+        // expected output: "zilla"
+
+    </script>
+</head>
+
+<body>
+
+    <div id="Contenair">
+        <div id="ecran">
+            <div id="petitEcran">StrOperationEcran</div>
+            <div id="grandErcan">IdGrand</div>
+        </div>
+
+        <div id="pave">
+            <div class="clsButton" onclick="EcranClear()">CE</div>
+            <div class="clsButton" onclick="EcraninnerHTML('(')">(</div>
+            <div class="clsButton" onclick="EcraninnerHTML(')')">)</div>
+            <div class="clsButton" onclick="EcraninnerHTML('sup')">&lArr;</div>
+            <div class="clsButton" onclick="EcraninnerHTML('7')">7</div>
+            <div class="clsButton" onclick="EcraninnerHTML('8')">8</div>
+            <div class="clsButton" onclick="EcraninnerHTML('9')">9</div>
+            <div class="clsButton" onclick="EcraninnerHTML('+')">+</div>
+            <div class="clsButton" onclick="EcraninnerHTML('4')">4</div>
+            <div class="clsButton" onclick="EcraninnerHTML('5')">5</div>
+            <div class="clsButton" onclick="EcraninnerHTML('6')">6</div>
+            <div class="clsButton" onclick="EcraninnerHTML('-')">-</div>
+            <div class="clsButton" onclick="EcraninnerHTML('1')">1</div>
+            <div class="clsButton" onclick="EcraninnerHTML('2')">2</div>
+            <div class="clsButton" onclick="EcraninnerHTML('3')">3</div>
+            <div class="clsButton" style="transform: rotate(45deg)" onclick="EcraninnerHTML('*')">+</div>
+            <div class="clsButton" onclick="EcraninnerHTML('0')">0</div>
+            <div class="clsButton" onclick="EcraninnerHTML('.')">.</div>
+            <div class="clsButton" onclick="EcraninnerHTML('/')">&divide;</div>
+            <div class="clsButton" style="background-color: red;" onclick="EcraninnerHTML('=')">=</div>
+        </div>
+    </div>
+    <p>Aperçu StrOperationEval pour eval</p>
+    <div id="infoEval" style="background-color: greenyellow">id="infoEval" StrOperationEval</div>
+    <script>
+        //document.getElementById('grandErcan').style.fontSize = '5px';
+    </script>
+</body>
+
+</html>

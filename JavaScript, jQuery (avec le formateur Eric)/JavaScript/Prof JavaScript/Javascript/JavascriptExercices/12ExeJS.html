@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function bonjour(Monform) {
+      var txt= 'et bonne journée !';
+      if ((Monform.prenom.value) !='') {
+       /* document.write('<P>Bonjour, '+ Monform.prenom.value + '<BR>');*/
+        document.formulaire.prenom.value = 'Bonjour';
+      } else {
+        alert('Ecrivez votre prénom !');
+      }
+    }
+  </script>
+
+</head>
+<body>
+<form name="formulaire">
+  <input type="text" name="prenom" value="" >
+  <input type="button" name="Bouton1" value="Salut" onClick="bonjour(formulaire);">
+</form>
+</body>
+</html>

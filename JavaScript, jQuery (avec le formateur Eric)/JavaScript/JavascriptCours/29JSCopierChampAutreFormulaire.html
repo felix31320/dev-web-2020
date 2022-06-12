@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function cmdvalid() {
+				document.formulaire.champ1.value = document.formulaire.ChoixPays.value;
+				document.autreformulaire.champ1.value = document.formulaire.champ1.value;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Copier un champ d'un autre formulaire</h1>
+
+		premier formulaire<br><br>
+		<form name="formulaire" style="border:2px solid black; display: inline-block;">
+			<select name="ChoixPays">
+				<option value="Paris">France</option>
+				<option value="Madrid">Espagne</option>
+				<option value="Rome">Italie</option>
+				<option value="Berlin">Allemagne</option>
+			</select>
+			<input type="text" name="champ1">
+			<input type="button" value="valider" onclick="cmdvalid()">
+		</form><br><br>
+
+		deuxieme formulaire<br><br>
+		<form name="autreformulaire" style="border:2px solid black; display: inline-block;">
+			<input type="text" name="champ1">
+		</form>
+	
+	</body>
+</html>

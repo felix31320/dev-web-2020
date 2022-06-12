@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Evalution progress barr</title>
+		<style>
+			.place{
+				position: relative;
+			}
+			.placegauche{
+				background-color: #cacaca;
+				width: 10%;
+				height: 80px;
+				position: absolute;
+				left: 0%;
+				border:outset grey 5px;
+				cursor: pointer;
+			}
+			.placedroite{
+				background-color: #cacaca;
+				width: 10%;
+				height: 80px;
+				position: absolute;
+				right: 0%;
+				border:outset grey 5px;
+				cursor: pointer;
+			}
+			.placemilieu{
+				position: absolute;
+				left: 50%;
+			}
+			.fleche{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			#pourcentage{
+				position: absolute;
+				top
+			}
+		</style>
+		<script>
+			var x = 50;
+			function dim() {
+
+				x+=5;
+				document.getElementById('pourcentage').innerHTML = x + '%';
+				
+			}
+
+			function aug() {
+
+				x-=5;
+				document.getElementById('pourcentage').innerHTML = x + '%';
+				
+			}
+		</script>
+	</head>
+	<body>
+		<div class="place">
+
+			<div class="placegauche" onclick="aug()">
+				<div class="fleche">&#9668</div>
+			</div>
+
+			<div class="placemilieu">
+
+				<div id="pourcentage">50%</div>
+
+			</div>
+
+			<div class="placedroite" onclick="dim()">
+				<div class="fleche">&#9658</div>
+			</div>
+
+		</div>
+	</body>
+</html>

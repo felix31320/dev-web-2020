@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>if And multiple</h1>
+	
+		<script>
+			var a = prompt('Entrer Votre age');
+			document.write(typeof(a))
+			// && veut dire ET
+
+			if (a>=1 && a<=17) {
+				alert('vous n\'etes pas encore majeur');
+			}
+			if (a>=18 && a<=49) {
+				alert('vous etes majeur mais pas encore majeur senior');
+			}
+			if (a>=50 && a<=59) {
+				alert('vous etes senior pas encore retraite');
+			}
+			if (a>=60) {
+				alert('vous etes retraite, profiter de votre temps libre');
+			}
+			
+		</script>
+	</body>
+</html>

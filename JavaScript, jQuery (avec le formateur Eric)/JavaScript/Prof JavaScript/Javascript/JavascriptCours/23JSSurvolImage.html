@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    function afficheinfo() {
+      document.getElementById('msginfo').innerHTML='<span>Cliquer ce lien</span>';
+    };
+    function masquerinfo() {
+      document.getElementById('msginfo').innerHTML='';
+    }
+  </script>
+</head>
+<body>
+<h1>Survol sur une image</h1>
+<img src="img/fraise.jpg" alt="fraise" width="350px;" style="border: 1px solid;"
+     onmouseover="afficheinfo()" onmouseout="masquerinfo()">
+<p id="msginfo"></p>
+
+
+</body>
+</html>
