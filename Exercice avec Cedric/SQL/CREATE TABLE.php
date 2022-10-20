@@ -9,7 +9,8 @@
 <body>
     <?php
         try {
-            $dbco = new PDO("mysql:host=localhost",'root','root');
+            // $dbco = new PDO("mysql:host=localhost",'root','root'); mac
+            $dbco = new PDO("mysql:host=localhost",'root',''); // PC window
             $dbco->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
             $sql = "CREATE DATABASE ExeDeCedric";

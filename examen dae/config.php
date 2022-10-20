@@ -9,7 +9,8 @@
 
 <?php // on va voir sur mon site : localhost
     try { // ici pour se connecter au SQL
-        $bdd = new PDO('mysql:host=localhost;dbname=1examen_dae','root','root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        // $bdd = new PDO('mysql:host=localhost;dbname=1examen_dae','root','root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); mac
+        $bdd = new PDO('mysql:host=localhost;dbname=1examen_dae','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); // PC window
         // echo 'on est connecté dans le BDD de examen_dae ';
     } catch (Exception $e) {
         die('erreur : ' . $e -> getMessage());

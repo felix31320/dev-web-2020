@@ -21,7 +21,8 @@
                         $sql1->execute();
                         while($lieu = $sql1->fetch(PDO::FETCH_ASSOC))
                         {
-                        echo '<option value="'.$lieu['id'].'">'.$lieu['lieu'].'</option>';
+                        // echo '<option value="'.$lieu['id'].'">'.$lieu['lieu'].'</option>'; mac
+                        echo '<option value="'.$lieu['lieu'].'">'.$lieu['lieu'].'</option>'; // PC window
                         } 
                     ?> 
                 </select>
@@ -34,7 +35,8 @@
                         $sql2->execute();
                         while($modele = $sql2->fetch(PDO::FETCH_ASSOC))
                         {
-                        echo '<option value="'.$modele['id'].'">'.$modele['modele'].'</option>';
+                        // echo '<option value="'.$modele['id'].'">'.$modele['modele'].'</option>'; mac
+                        echo '<option value="'.$modele['modele'].'">'.$modele['modele'].'</option>'; // PC windows
                         } 
                     ?> 
                 </select>
@@ -47,7 +49,8 @@
                         $sql3->execute();
                         while($support = $sql3->fetch(PDO::FETCH_ASSOC))
                         {
-                        echo '<option value="'.$support['id'].'">'.$support['support'].'</option>';
+                        //echo '<option value="'.$support['id'].'">'.$support['support'].'</option>'; mac
+                        echo '<option value="'.$support['support'].'">'.$support['support'].'</option>'; // PC window
                         }
                     ?> 
                 </select>
@@ -60,7 +63,8 @@
                         $sql4->execute();
                         while($type = $sql4->fetch(PDO::FETCH_ASSOC))
                         {
-                        echo '<option value="'.$type['id'].'">'.$type['type'].'</option>';
+                        //echo '<option value="'.$type['id'].'">'.$type['type'].'</option>'; mac
+                        echo '<option value="'.$type['type'].'">'.$type['type'].'</option>'; // PC window
                         }
                     ?> 
                 </select>

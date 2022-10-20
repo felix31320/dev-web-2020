@@ -1,0 +1,10 @@
+MAMP : se connecter au localhost
+
+utilisateur : root
+mdp : root
+
+
+WAMP : se connecter au localhost
+
+utilisateur : root
+mdp : ' ' c'est vide donc n'ecris rien 

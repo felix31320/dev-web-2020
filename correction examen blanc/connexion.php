@@ -2,7 +2,8 @@
 // connexion au serveur et à la base scoop
     $db_host="localhost";
     $db_user="root";
-    $db_password="root";
+    // $db_password="root"; mac
+    $db_password=""; // PC window
     $db_name="correction_examen_blanc";
 
     try{

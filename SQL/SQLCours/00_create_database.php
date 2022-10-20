@@ -1,6 +1,7 @@
 <?php
     try{
-        $bdd = new PDO("mysql:host=localhost",'root','root');
+        // $bdd = new PDO("mysql:host=localhost",'root','root'); mac
+        $bdd = new PDO("mysql:host=localhost",'root',''); // PC window
         $bdd->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
         $bdd->exec('CREATE DATABASE test');
