@@ -19,7 +19,7 @@
         echo 'le client a ' . $ma_variable . ' ans<br><br>'; // conseille,  la seule ligne, comme un peu pres javascript : 'string' + ... + 'string'
         echo "le client a $ma_variable ans"; // mais deconseiller la difference entre "..." et '...'
         
-
+        
     ?>
 
 </body>
